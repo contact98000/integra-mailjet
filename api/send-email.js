@@ -35,13 +35,8 @@ module.exports = async function handler(req, res) {
                     Email: 's.fernandes@integra-hpl.com',
                     Name: 'Integra Copy'
                 }],
-                TemplateID: 7717681,
-                TemplateLanguage: true,
-                Subject: 'Information Integra Monaco',
-                Variables: {
-                    store_name: storeName,
-                    client_email: clientEmail
-                }
+                Subject: 'Information Integra Monaco - ' + storeName,
+                HTMLPart: '<h2>Bonjour ' + storeName + ',</h2><p>Merci pour votre intérêt pour nos produits Integra Monaco.</p><p>Cordialement,<br>L\'équipe Integra</p>'
             }]
         });
 
